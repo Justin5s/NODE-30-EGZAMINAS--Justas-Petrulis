@@ -5,3 +5,5 @@ DB_USER=your data
 DB_PASSWORD=your data
 DB_DB=noyour data
 DB_PORT=your data
+
+JWT_TOKEN_SECRET=

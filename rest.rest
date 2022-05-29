@@ -1,0 +1,61 @@
+GET http://localhost:3000/users
+###
+
+
+POST http://localhost:3000/auth/register
+Content-Type: application/json
+
+{
+    "full_name": "Jessy Bond",
+    "email": "jessy@bond.com",
+    "password": "11111"
+}
+###
+
+POST http://localhost:3000/auth/login
+
+{
+    "email": "tom@bond.com",
+    "password": "11111"
+}
+###
+POST http://localhost:3000/auth/login
+Content-Type: application/json
+
+{
+    "email": "tom@bond.com",
+    "password": "11111"
+}
+###
+
+GET http://localhost:3000/bills/1
+Authorization: Bearer 
+###
+
+POST http://localhost:3000/bills
+Content-Type: application/json
+
+{
+      "group_id": 1,
+      "amount": 650,
+      "description": "Gas"
+}
+
+###
+
+POST http://localhost:3000/accounts/create
+Content-Type: application/json
+
+{
+      "group_id": 1
+}
+
+###
+
+POST http://localhost:3000/groups
+Content-Type: application/json
+
+{
+      "name": "For Food"
+}
+###
