@@ -1,4 +1,4 @@
-require('dotenv').config();
+// require('dotenv').config();
 
 const dbConfig = {
   host: process.env.DB_HOST,
@@ -7,5 +7,9 @@ const dbConfig = {
   port: process.env.DB_PORT,
   database: process.env.DB_DB,
 };
+
+// // console.log('dbConfig ===', dbConfig);
+
+// const PORT = +process.env.SERVER_PORT || 5000;
 
 module.exports = dbConfig;
